@@ -1,0 +1,6 @@
+;; -*-lisp-*-
+(in-package :stumpwm)
+
+(define-key *top-map* (kbd "XF86AudioLowerVolume") "exec amixer set Master 5%-")
+(define-key *top-map* (kbd "XF86AudioRaiseVolume") "exec amixer set Master 5%+")
+(define-key *top-map* (kbd "XF86AudioMute") "exec amixer set Master toggle")
