@@ -1,0 +1,34 @@
+# Lookup in /etc/termcap or /etc/terminfo else, you can get the right keycode
+# by typing ^v and then type the key or key combination you want to use.
+# "man zshzle" for the list of available actions
+
+# vim keybindings
+bindkey -v
+
+# Map insert to overwrite
+bindkey '\e[2~'   overwrite-mode          
+
+# Map pgup to search upward in history
+bindkey '\e[5~'   history-search-backward 
+
+# Map pgdn to search in history
+bindkey '\e[6~'   history-search-forward 
+
+# Map up arrow to search upward in history
+bindkey '^[[A'   history-search-backward 
+
+# Map down arrow to search in history
+bindkey '^[[B'  history-search-forward 
+
+# Map ctrl-r for history search
+bindkey '^R'      history-incremental-pattern-search-backward
+
+# Map the delete bindings
+bindkey '^D'      delete-char          
+bindkey '\e[3~'   delete-char           
+
+# Map ctrl-a to begining of the line
+bindkey '^A'      beginning-of-line      
+
+# Map ctrl-e to end of the line
+bindkey '^E'      end-of-line             

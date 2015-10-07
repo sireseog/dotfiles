@@ -1,0 +1,1 @@
+modules=( 'cachefiles' 'drm_kms_helper' 'hdaps' 'i915' 'iptable_nat' 'ipt_MASQUERADE' 'lz4_compress' 'nf_conntrack_ipv4' 'nf_defrag_ipv4' 'nf_nat' 'nf_nat_ftp' 'nf_nat_ipv4' 'nf_nat_irc' 'nf_nat_tftp' 'nvidia' 'nvidia-uvm' 'snd-seq' 'snd-seq-device' 'snd-seq-dummy' 'thinkpad_acpi' 'xt_conntrack' 'xt_nat' 'zd1211rw' 'zram' )

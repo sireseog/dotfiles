@@ -1,0 +1,11 @@
+# Initialize prompt
+autoload -U promptinit
+promptinit
+
+# allow funky stuff in prompt
+setopt PROMPT_SUBST
+
+# Define the left and right prompts
+PROMPT="${fg_blue}${at_bold}> ${fg_white}${at_boldoff}%{$reset_color%}"
+RPROMPT=''
+

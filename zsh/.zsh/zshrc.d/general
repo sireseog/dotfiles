@@ -1,0 +1,119 @@
+# i will figure it out
+autoload -U colors zsh-mime-setup select-word-style
+
+# colors
+colors          
+
+# run everything as if it's an executable
+zsh-mime-setup  
+
+# ctrl+w on words
+select-word-style bash 
+
+# make cd push old dir in dir stack
+setopt auto_pushd               
+
+# no duplicates in dir stack
+setopt pushd_ignore_dups        
+
+# no dir stack after pushd or popd
+setopt pushd_silent             
+
+# `pushd` = `pushd $HOME`
+setopt pushd_to_home            
+
+# where to store zsh config
+HISTFILE=~/.zsh/zshrc.d/session/history 
+
+# big history
+HISTSIZE=5000                   
+
+# big history
+SAVEHIST=5000                   
+
+# append
+setopt append_history           
+
+# no duplicate
+setopt hist_ignore_all_dups     
+
+# ignore space prefixed commands
+unsetopt hist_ignore_space      
+
+# trim blanks
+setopt hist_reduce_blanks       
+
+# show before executing history commands
+setopt hist_verify              
+
+# add commands as they are typed, don't wait until shell exit 
+setopt inc_append_history       
+
+# share hist between sessions
+setopt share_history            
+
+# !keyword
+setopt bang_hist                
+
+# if command is a path, cd into it
+setopt auto_cd                  
+
+# self explicit
+setopt auto_remove_slash        
+
+# resolve symlinks
+setopt chase_links              
+
+# try to correct spelling of commands
+setopt correct                  
+
+# activate complex pattern globbing
+setopt extended_glob            
+
+# include dotfiles in globbing
+setopt glob_dots                
+
+# print return value if non-zero
+setopt print_exit_value         
+
+# no bell on error
+unsetopt beep                   
+
+# no lower prio for background jobs
+unsetopt bg_nice                
+
+# must use >| to truncate existing files
+unsetopt clobber                
+
+# no bell on error in history
+unsetopt hist_beep              
+
+# no hup signal at shell exit
+unsetopt hup                    
+
+# do not exit on end-of-file
+unsetopt ignore_eof             
+
+# no bell on ambiguous completion
+unsetopt list_beep              
+
+# ask for confirmation for `rm *' or `rm path/*'
+unsetopt rm_star_silent         
+
+# Use zsh path declaration
+typeset -U path
+
+# Autoload help
+autoload -U run-help
+autoload run-help-git
+autoload run-help-svn
+autoload run-help-svk
+
+# Auto rehash
+setopt nohashdirs
+setopt nohashcmds
+
+# for the mode display
+zle -N zle-line-init
+zle -N zle-keymap-select
+

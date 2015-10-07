@@ -1,0 +1,23 @@
+" first thing first
+set nocompatible
+
+" source the plugins file if it exists
+if filereadable(expand("~/.vim/vimrc.d/plugins.vim"))
+    source ~/.vim/vimrc.d/plugins.vim
+endif
+
+" source the general file if it exists
+if filereadable(expand("~/.vim/vimrc.d/general.vim"))
+    source ~/.vim/vimrc.d/general.vim
+endif
+
+" source the mappings file if it exists
+if filereadable(expand("~/.vim/vimrc.d/mappings.vim"))
+    source ~/.vim/vimrc.d/mappings.vim
+endif
+
+" source per plugin setting
+let vimsettings = '~/.vim/settings'
+for fpath in split(globpath(vimsettings, '*.vim'), '\n')
+    exe 'source' fpath
+endfor

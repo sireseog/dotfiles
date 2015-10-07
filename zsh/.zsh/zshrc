@@ -1,0 +1,27 @@
+# Environement Variables
+source ~/.zsh/zshrc.d/session/envars
+
+# Colors
+source ~/.zsh/zshrc.d/colors
+
+# Prompt
+source ~/.zsh/zshrc.d/prompt
+
+# General
+source ~/.zsh/zshrc.d/general
+
+# Completion
+source ~/.zsh/zshrc.d/completion
+
+# Mappings
+source ~/.zsh/zshrc.d/mappings
+
+# Plugins
+source ~/.zsh/zshrc.d/plugins
+
+# Aliases
+source ~/.zsh/zshrc.d/session/aliases
+
+# Functions
+source ~/.zsh/zshrc.d/session/functions
+

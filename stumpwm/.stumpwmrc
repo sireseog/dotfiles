@@ -1,6 +1,18 @@
 ;; -*-lisp-*-
+;;
+;; Here is a sample .stumpwmrc file
+
 (in-package :stumpwm)
 
+;; change the prefix key to something else
+(set-prefix-key (kbd "C-t"))
+
+;; Clear rules
+(clear-window-placement-rules)
+
+;; Bind keys to multimedia control
 (define-key *top-map* (kbd "XF86AudioLowerVolume") "exec amixer set Master 5%-")
 (define-key *top-map* (kbd "XF86AudioRaiseVolume") "exec amixer set Master 5%+")
 (define-key *top-map* (kbd "XF86AudioMute") "exec amixer set Master toggle")
+
+

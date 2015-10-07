@@ -1,0 +1,7 @@
+export TERM=screen-256color
+export EDITOR=/usr/bin/emacs
+export TZ='GMT'
+export LESS=-RFX
+export KEYTIMEOUT=1
+export ZGEN_DIR=~/.zsh/plugins
+path=(~/.cabal/bin /opt/java/jdk/bin $path)
